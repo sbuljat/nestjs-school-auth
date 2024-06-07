@@ -10,6 +10,16 @@ This project showcases JWT and Guards to support Authentication and Authorizatio
 $ npm install
 ```
 
+### Only for using Vercel
+
+```bash
+$ vercel login
+```
+
+```bash
+$ npm i -g vercel
+```
+
 ## Running the app
 
 ```bash
@@ -27,6 +37,19 @@ $ nest start --watch
 - Perform HTTP POST http://localhost:3000/auth/login with JSON body {"username":"stipe", "password":"password123"} from Postman, you should get HTTP 200 response with access_token.
 - Perform HTTP GET http://localhost:3000/auth/profile using access_token from previous step as Authorization: Bearer {}, you should get HTTP 200 with JSON response.
 - Perform HTTP GET http://localhost:3000/users using access_token from previous step as Authorization: Bearer {}, you should get HTTP 403 response. This is because logged user does not have admin privileges. Re-login using {"username":"jure", "password":"password321"} and retry this endpoint, it should return HTTP 200 with all users in response.
+
+## Deploying the app
+
+### Vercel
+
+```bash
+$ npm run build
+```
+
+```bash
+$ vercel link
+$ vercel deploy --prod
+```
 
 ## License
 
