@@ -10,16 +10,6 @@ This project showcases JWT and Guards to support Authentication and Authorizatio
 $ npm install
 ```
 
-### Only for using Vercel
-
-```bash
-$ vercel login
-```
-
-```bash
-$ npm i -g vercel
-```
-
 ## Running the app
 
 ```bash
@@ -40,16 +30,9 @@ $ nest start --watch
 
 ## Deploying the app
 
-### Vercel
+### Render.com
 
-```bash
-$ npm run build
-```
-
-```bash
-$ vercel link
-$ vercel deploy --prod
-```
+TODO
 
 ## License
 
