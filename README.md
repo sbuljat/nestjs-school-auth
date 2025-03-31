@@ -32,7 +32,9 @@ $ nest start --watch
 
 ### Render.com
 
-TODO
+- Register free account (hobby plan) on https://render.com/
+- Create a new Web Service by connecting this public GitHub repository
+- Deploy service & view public URL
 
 ## License
 
